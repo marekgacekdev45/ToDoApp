@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/41fdd41dda.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="app__header">
+            <h1 class="app__header-heading">To Do Application</h1>
+            <input type="text" placeholder="Write To Do" class="app__header-input">
+            <button class="app__header-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="app__body">
+            <div class="uncompleted">
+            <h3 class="app__body-heading"></h3>
+            <p class="app__body-alert"></p>
+            <ul class="app__body-ul-list app__body-ul-list">
+            </ul>
+        </div>
+        <div class="completed">
+            <h3 class="app__body-heading app__body-heading app__body-heading app__body-heading--completed"></h3>
+            <ul class="app__body-ul-list app__body-ul-list--completed">
+            </ul>
+        </div>
+        </div>
+
+        <div class="popup">
+            <h3 class="popup__heading">Edit quest:</h3>
+            <div class="popup__body">
+                <p class="popup__body-info"></p>
+                <input type="text" class="popup__body-input" placeholder="Edit quest">
+                <button class="popup__body-btn accepted">Accept</button>
+                <button class="popup__body-btn cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
